@@ -4,11 +4,11 @@
   </div>
 </template>
 <script lang="ts" setup name="login">
-import { ref, computed, onMounted,onBeforeUnmount} from "vue";
+import { ref,onMounted,onBeforeUnmount} from "vue";
 import * as THREE from 'three'
 import RINGS from 'vanta/src/vanta.rings'
 const vantaRef = ref(null);
-let vantaEffect=ref(null);
+let vantaEffect:any;
 onMounted(() => {
     vantaEffect=RINGS({
       el:vantaRef.value,
@@ -25,10 +25,11 @@ onMounted(() => {
       backgroundAlpha: 0.84,
 
     })
+   
 })
 onBeforeUnmount(()=>{
   if(vantaEffect){
-    // vantaEffect.destory();
+    vantaEffect.destroy();
   }
 })
 </script>
