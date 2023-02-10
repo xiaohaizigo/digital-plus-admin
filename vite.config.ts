@@ -4,9 +4,10 @@ import {resolve} from 'path'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  resolve:{
-    alias:{
-      "@": resolve(__dirname,'./src')
+  resolve: {
+    // ↓路径别名，主要是这部分
+    alias: {
+      "@": resolve(__dirname, "./src")
     }
   },
   css: {

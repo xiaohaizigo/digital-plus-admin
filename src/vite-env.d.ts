@@ -6,9 +6,9 @@ declare module "*.vue" {
 	const component: DefineComponent<{}, {}, any>;
 	export default component;
 }
-declare module ".js" {
-	import RINGS from 'vanta/src/vanta.waves';
+declare module "*.js" {
+	import RINGS from 'vanta/src/vanta.rings';
 	export default RINGS;
 }
 
-declare module "*"
+declare module "vanta/src/vanta.birds"
