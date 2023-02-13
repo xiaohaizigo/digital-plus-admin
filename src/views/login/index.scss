@@ -1,13 +1,30 @@
 .login-container{
    position: relative;
 //    left: -15vw;
-   width: 100%;
+   width: 100vw;
    height: 100vh;
-   margin: auto;
-
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+   .login-left{
+     font-family: circular, 'segoe ui', sans-serif;
+     flex: 1;
+     font-size: 72px;
+     color: #fff;
+     min-width: 200px;
+     height: 300px;
+     .web-title{
+      font-weight: 400;
+      font-size: 1em;
+     }
+     .web-desc{
+      font-weight: 400;
+      font-size: 0.5em;
+     }
+   }
    .login-box{
       width: 400px;
       height: 300px;
-   
+      margin-right: 100px;
    }
 }

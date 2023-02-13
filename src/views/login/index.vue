@@ -1,8 +1,14 @@
 <template>
   <div class="login-container" ref="vantaRef">
+    <!-- 左侧文字 -->
+    <div class="login-left">
+      <div class="web-title">DIGITAL PLUS ADMIN</div>
+      <div class="web-desc">Trading website about digital collections</div>
+    </div>
+    <!-- 登录卡片 -->
     <el-card class="login-box">
       <div class="login-title">
-        <img class="login-logo" src="@/assets/vue.svg"/>
+        <!-- <img class="login-logo" src="@/assets/vue.svg"/> -->
         <span class="logo-text">系统登录</span>
       </div>
       <div class="login-form">
