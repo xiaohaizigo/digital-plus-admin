@@ -15,9 +15,9 @@
     </el-input>
     </el-form-item>
   </el-form>
-  <div class="loginForm_button">
-    <el-button class="login_button" :icon="UserFilled" type="primary" @click="login(loginFormRef)" :loading="loading" >登录</el-button>
-    <el-button class="reset_button" :icon="CircleClose" type="primary" @click="reset(loginFormRef)" plain>重置</el-button>
+  <div class="loginForm-button">
+    <el-button class="login-button" :icon="UserFilled" type="primary" @click="login(loginFormRef)" :loading="loading" >登录</el-button>
+    <el-button class="reset-button" :icon="CircleClose" type="primary" @click="reset(loginFormRef)" plain>重置</el-button>
   </div>
 </template>
 <script setup lang="ts">
@@ -47,8 +47,8 @@ const login=(formEl:ElFormInstance|undefined)=>{
       if(!formEl) return;
       formEl.validate((valid,fields)=>{
         if(valid){
+          loading.value=true;
           setTimeout(()=>{
-            loading.value=true;
             router.push(HOME_URL);
           },1000)
         }

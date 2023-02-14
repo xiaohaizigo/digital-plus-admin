@@ -1,30 +1,83 @@
-.login-container{
-   position: relative;
-//    left: -15vw;
-   width: 100vw;
-   height: 100vh;
-   display: flex;
-   align-items: center;
-   justify-content: flex-end;
-   .login-left{
-     font-family: circular, 'segoe ui', sans-serif;
-     flex: 1;
-     font-size: 72px;
-     color: #fff;
-     min-width: 200px;
-     height: 300px;
-     .web-title{
+.login-container {
+  position: relative;
+  //    left: -15vw;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  .login-left {
+    font-family: circular, "segoe ui", sans-serif;
+    flex: 1;
+    font-size: 72px;
+    color: #fff;
+    min-width: 200px;
+    height: 300px;
+    .web-title {
       font-weight: 400;
       font-size: 1em;
-     }
-     .web-desc{
+    }
+    .web-desc {
       font-weight: 400;
       font-size: 0.5em;
-     }
-   }
-   .login-box{
-      width: 400px;
-      height: 300px;
-      margin-right: 100px;
-   }
+    }
+  }
+  .login-box {
+    width: 850px;
+    height: 450px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: inset;
+    margin: -200px 100px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 20px;
+    .left-carousel {
+      flex: 1 0 auto;
+      // border-right: 2px dashed #afafaf ;
+      // padding-right: 10px;
+      .carousel-img{
+         width: 280px;
+         height: 300px;
+      }
+    }
+    .right-form {
+      width: 350px;
+      height:300px;
+      margin-right: 20px;
+     
+      .login-title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 0 ;
+
+        .login-logo {
+          height: 40px;
+          width: 40px;
+        }
+        .login-text {
+          font-family: circular, "segoe ui" sans-serif;
+          font-size: 18px;
+          font-weight: 800;
+          color: #303030;
+          padding: 0 0 0 20px;
+        }
+      }
+      .el-form-item {
+        margin-bottom: 20px;
+      }
+      .loginForm-button {
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+        gap: 5px;
+        .el-button {
+          width: 150px;
+        }
+      }
+    }
+  }
 }
